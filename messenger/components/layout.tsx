@@ -9,9 +9,11 @@ export default function Layout({ children }) {
   return (
     <div className="relative w-screen h-screen overflow-x-hidden overflow-y-auto">
       <GlobalHeader />
-      <Navbar />
-      <div className="max-w-full">
-        {children}
+      <div className="main-content pt-12">
+        <Navbar />
+        <div className="max-w-full">
+          {children}
+        </div>
       </div>
       {stickyBanner && <StickyBanner onClose={() => showStickyBanner(false)} />}
     </div>
