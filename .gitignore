@@ -1,0 +1,13 @@
+# Mac OS
+.DS_Store
+
+# NodeJS
+**/*/node_modules/
+
+# NextJS
+**/*/.next/
+**/*/out/
+
+# Env
+.env
+env/
